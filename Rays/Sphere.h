@@ -14,7 +14,7 @@ namespace spr
     Sphere();
     Sphere(Vec3 center, double radius);
 
-    virtual bool hit(Ray r, double& tmin, ShadeRec& sr);
+    virtual bool hit(Ray r, double& tmin, ShadeRec& sr) const;
    private:
     Vec3 center;
     double radius;

@@ -14,7 +14,7 @@ namespace spr
     Plane();
     Plane(Vec3 point, Vec3 normal);
 
-    virtual bool hit(Ray r, double& tmin, ShadeRec& sr);
+    virtual bool hit(Ray r, double& tmin, ShadeRec& sr) const;
    private:
     Vec3 point;
     Vec3 normal;

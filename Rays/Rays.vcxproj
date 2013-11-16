@@ -76,6 +76,7 @@
     <ClCompile Include="ShadeRec.cpp" />
     <ClCompile Include="Sphere.cpp" />
     <ClCompile Include="Vec3.cpp" />
+    <ClCompile Include="World.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="constants.h" />
@@ -86,6 +87,7 @@
     <ClInclude Include="ShadeRec.h" />
     <ClInclude Include="Sphere.h" />
     <ClInclude Include="Vec3.h" />
+    <ClInclude Include="ViewPlane.h" />
     <ClInclude Include="World.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

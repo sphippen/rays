@@ -10,7 +10,7 @@ namespace spr
   Sphere::Sphere() : center(), radius(0.0) {}
   Sphere::Sphere(Vec3 center, double radius) : center(center), radius(radius) {}
 
-  bool Sphere::hit(Ray r, double& tmin, ShadeRec& sr)
+  bool Sphere::hit(Ray r, double& tmin, ShadeRec& sr) const
   {
     double a = r.d.dot(r.d);
     double b = 2 * ((r.o - center).dot(r.d));

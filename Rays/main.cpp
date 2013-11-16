@@ -1,11 +1,20 @@
-#include <functional>
+#include <cstdio>
 #include <cassert>
-#include <vector>
 #include <cstdlib>
+#include <functional>
+#include <vector>
+#include <memory>
+
 #include <SFML/Graphics.hpp>
 
-const int sceneHeight = 800;
-const int sceneWidth = 600;
+#include "World.h"
+
+using std::vector;
+using std::shared_ptr;
+using std::make_shared;
+
+const int sceneHeight = 1080;
+const int sceneWidth = 1920;
 
 struct Pixel
 {
@@ -28,6 +37,13 @@ struct ThreadData
 
 void renderThread(ThreadData d)
 {
+  // Right now it's just one thread, we'll have to change the World class for multithreading
+  // if we go that route
+  spr::World w;
+  w.build();
+  w.render_scene(d.xMax - d.xMin, d.yMax - d.yMin);
+  // TODO: hook up world to pixel callback
+  /*
   for (int y = d.yMin; y < d.yMax; ++y) {
     for (int x = d.xMin; x < d.xMax; ++x) {
       Pixel p;
@@ -41,13 +57,13 @@ void renderThread(ThreadData d)
       p.b += sin(static_cast<double>(x+y) / (sceneWidth + sceneHeight));
       d.f(p);
     }
-  }
+  }*/
 }
 
 int main(int argc, char* argv[])
 {
   srand(time(NULL));
-  sf::RenderWindow window(sf::VideoMode(sceneWidth, sceneHeight), "SFML works!"/*, sf::Style::Fullscreen*/);
+  sf::RenderWindow window(sf::VideoMode(sceneWidth, sceneHeight), "SFML works!", sf::Style::Fullscreen);
   
   sf::Image tracedImage;
   tracedImage.create(sceneWidth, sceneHeight);
@@ -58,7 +74,7 @@ int main(int argc, char* argv[])
 
   sf::Sprite sceneSprite(tracedTexture);
 
-  std::vector<Pixel> toUpdate;
+  vector<Pixel> toUpdate;
   sf::Mutex mutex;
 
   ThreadData d;
@@ -66,13 +82,21 @@ int main(int argc, char* argv[])
     sf::Lock lock(mutex);
     toUpdate.push_back(p);
   };
-  d.xMin = 0;
-  d.xMax = sceneWidth;
-  d.yMin = 0;
-  d.yMax = sceneHeight;
-  sf::Thread traceThread(renderThread, d);
 
-  traceThread.launch();
+  vector<shared_ptr<sf::Thread>> threads;
+  const int xDiv = 1;
+  const int yDiv = 1;
+  for (int x = 0; x < xDiv; ++x) {
+    for (int y = 0; y < yDiv; ++y) {
+      d.xMin = (x * sceneWidth) / xDiv;
+      d.xMax = ((x+1) * sceneWidth) / xDiv;
+      d.yMin = (y * sceneHeight) / yDiv;
+      d.yMax = ((y+1) * sceneHeight) / yDiv;
+      auto thread = make_shared<sf::Thread>(renderThread, d);
+      thread->launch();
+      threads.push_back(thread);
+    }
+  }
 
   while (window.isOpen()) {
     sf::Event event;
@@ -106,6 +130,7 @@ int main(int argc, char* argv[])
     window.draw(sceneSprite);
     window.display();
   }
+  // Exit early to avoid waiting for any created threads to finish (sf::Thread destructor waits)
   exit(0);
 
   // To avoid warnings

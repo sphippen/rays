@@ -9,7 +9,7 @@ namespace spr
   Plane::Plane() : point(), normal() {}
   Plane::Plane(Vec3 point, Vec3 normal) : point(point), normal(normal) {}
 
-  bool Plane::hit(Ray r, double& tmin, ShadeRec& sr)
+  bool Plane::hit(Ray r, double& tmin, ShadeRec& sr) const
   {
     double t = (point - r.o).dot(normal) / r.d.dot(normal);
 
