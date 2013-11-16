@@ -1,8 +1,8 @@
 #include <cmath>
 #include "Vec3.h"
 
-namespace spr {
-
+namespace spr
+{
   Vec3::Vec3() : x(0.0), y(0.0), z(0.0) {}
   Vec3::Vec3(double x, double y, double z) : x(x), y(y), z(z) {}
 
@@ -32,6 +32,13 @@ namespace spr {
     x *= s;
     y *= s;
     z *= s;
+  }
+
+  Vec3 Vec3::scaled(double s)
+  {
+    Vec3 v(*this);
+    v.scale(s);
+    return v;
   }
 
   double Vec3::norm() const
@@ -71,6 +78,11 @@ namespace spr {
 
   Vec3 Vec3::zero() { return Vec3(0.0, 0.0, 0.0); }
 
+  Vec3 Vec3::black() { return Vec3(0.0, 0.0, 0.0); }
+  Vec3 Vec3::red() { return Vec3(1.0, 0.0, 0.0); }
+  Vec3 Vec3::green() { return Vec3(0.0, 1.0, 0.0); }
+  Vec3 Vec3::blue() { return Vec3(0.0, 0.0, 1.0); }
+  Vec3 Vec3::yellow() { return Vec3(1.0, 1.0, 0.0); }
 }
 
 spr::Vec3 operator+(spr::Vec3 a, spr::Vec3 b)

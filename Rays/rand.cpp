@@ -3,7 +3,6 @@
 
 namespace spr
 {
-
   int randInt()
   {
     return rand();
@@ -18,6 +17,7 @@ namespace spr
   {
     return static_cast<double>(randInt()) / static_cast<double>(RAND_MAX);
   }
+
   void seedRand(unsigned int seed)
   {
     srand(seed);

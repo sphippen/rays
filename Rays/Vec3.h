@@ -19,6 +19,7 @@ namespace spr
     Vec3 operator-();
 
     void scale(double s);
+    Vec3 scaled(double s);
 
     double norm() const;
 
@@ -31,6 +32,12 @@ namespace spr
     double distance(Vec3 a) const;
 
     static Vec3 zero();
+
+    static Vec3 black();
+    static Vec3 red();
+    static Vec3 green();
+    static Vec3 blue();
+    static Vec3 yellow();
   };
 }
 
