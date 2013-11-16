@@ -3,7 +3,6 @@
 
 namespace spr
 {
-
   class Vec3
   {
    public:
@@ -11,6 +10,7 @@ namespace spr
     double y;
     double z;
    
+    Vec3();
     Vec3(double x, double y, double z);
 
     Vec3& operator+=(spr::Vec3 a);
@@ -32,7 +32,6 @@ namespace spr
 
     static Vec3 zero();
   };
-
 }
 
 spr::Vec3 operator+(spr::Vec3 a, spr::Vec3 b);
