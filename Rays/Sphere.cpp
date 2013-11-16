@@ -1,10 +1,9 @@
 #include "Sphere.h"
 
 #include <cmath>
+#include "constants.h"
 #include "Ray.h"
 #include "ShadeRec.h"
-
-static const double kEpsilon = 1e-6;
 
 namespace spr
 {
