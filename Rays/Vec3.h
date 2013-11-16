@@ -16,6 +16,8 @@ namespace spr
     Vec3& operator+=(spr::Vec3 a);
     Vec3& operator-=(spr::Vec3 a);
 
+    Vec3 operator-();
+
     void scale(double s);
 
     double norm() const;
@@ -25,6 +27,8 @@ namespace spr
 
     double dot(Vec3 a) const;
     Vec3 cross(Vec3 a) const;
+
+    double distance(Vec3 a) const;
 
     static Vec3 zero();
   };

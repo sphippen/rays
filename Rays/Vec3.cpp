@@ -21,6 +21,11 @@ namespace spr {
     return *this;
   }
 
+  Vec3 Vec3::operator-()
+  {
+    return Vec3(-x, -y, -z);
+  }
+
   void Vec3::scale(double s)
   {
     x *= s;
@@ -56,6 +61,11 @@ namespace spr {
   Vec3 Vec3::cross(Vec3 a) const
   {
     return Vec3(y*a.z - z*a.y, z*a.x - x*a.z, x*a.y - y*a.x);
+  }
+
+  double Vec3::distance(Vec3 a) const
+  {
+    return (*this - a).norm();
   }
 
   Vec3 Vec3::zero() { return Vec3(0.0, 0.0, 0.0); }
