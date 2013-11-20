@@ -2,5 +2,5 @@
 
 namespace spr
 {
-  ShadeRec::ShadeRec(World& w) : hitAnObject(false), localHitPoint(), normal(), color(Vec3::black()), w(w) {}
+  ShadeRec::ShadeRec(const World& w) : hitAnObject(false), localHitPoint(), normal(), color(Vec3::black()), w(w) {}
 }

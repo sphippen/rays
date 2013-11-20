@@ -26,6 +26,8 @@ namespace spr
     void normalize();
     Vec3 normalized() const;
 
+    Vec3 pow(double c) const;
+
     double dot(Vec3 a) const;
     Vec3 cross(Vec3 a) const;
 

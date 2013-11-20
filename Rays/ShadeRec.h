@@ -13,9 +13,9 @@ namespace spr
     Vec3 localHitPoint;
     Vec3 normal;
     Vec3 color;
-    World& w;
+    const World& w;
 
-    ShadeRec(World& w);
+    ShadeRec(const World& w);
   };
 }
 

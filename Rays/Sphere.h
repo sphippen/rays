@@ -14,10 +14,16 @@ namespace spr
     Sphere();
     Sphere(Vec3 center, double radius);
 
+    Vec3 center() const;
+    void setCenter(Vec3 center);
+
+    double radius() const;
+    void setRadius(double radius);
+
     virtual bool hit(Ray r, double& tmin, ShadeRec& sr) const;
    private:
-    Vec3 center;
-    double radius;
+    Vec3 center_;
+    double radius_;
   };
 }
 #endif

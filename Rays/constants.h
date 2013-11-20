@@ -4,6 +4,7 @@
 namespace spr
 {
   extern const double kEpsilon;
+  extern const double kHugeValue;
 }
 
 #endif

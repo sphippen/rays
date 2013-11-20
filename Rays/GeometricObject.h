@@ -11,8 +11,10 @@ namespace spr
   {
    public:
     virtual bool hit (Ray r, double& tmin, ShadeRec& sr) const = 0;
+    Vec3 color() const;
+    void setColor(Vec3 color);
    protected:
-    Vec3 color;
+    Vec3 color_;
   };
 }
 

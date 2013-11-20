@@ -7,7 +7,10 @@
 namespace spr
 {
   Plane::Plane() : point(), normal() {}
-  Plane::Plane(Vec3 point, Vec3 normal) : point(point), normal(normal) {}
+  Plane::Plane(Vec3 point, Vec3 normal) : point(point), normal(normal)
+  {
+    normal.normalize();
+  }
 
   bool Plane::hit(Ray r, double& tmin, ShadeRec& sr) const
   {

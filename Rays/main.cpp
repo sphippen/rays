@@ -8,13 +8,14 @@
 #include <SFML/Graphics.hpp>
 
 #include "World.h"
+#include "Vec3.h"
 
 using std::vector;
 using std::shared_ptr;
 using std::make_shared;
 
-const int sceneHeight = 1080;
-const int sceneWidth = 1920;
+const int sceneHeight = 200;
+const int sceneWidth = 200;
 
 struct Pixel
 {
@@ -25,10 +26,11 @@ struct Pixel
   double b;
 };
 
-typedef std::function<void (Pixel)> PixelCallback;
+typedef std::function<void (int x, int y, spr::Vec3 color)> PixelCallback;
 struct ThreadData
 {
   PixelCallback f;
+  spr::World* w;
   int xMin;
   int xMax;
   int yMin;
@@ -37,33 +39,12 @@ struct ThreadData
 
 void renderThread(ThreadData d)
 {
-  // Right now it's just one thread, we'll have to change the World class for multithreading
-  // if we go that route
-  spr::World w;
-  w.build();
-  w.render_scene(d.xMax - d.xMin, d.yMax - d.yMin);
-  // TODO: hook up world to pixel callback
-  /*
-  for (int y = d.yMin; y < d.yMax; ++y) {
-    for (int x = d.xMin; x < d.xMax; ++x) {
-      Pixel p;
-      p.x = x;
-      p.y = y;
-      p.r = 0;
-      p.g = 0;
-      p.b = 0;
-      p.r += static_cast<double>(x) / sceneWidth;
-      p.g += 1.0 - static_cast<double>(y) / sceneHeight;
-      p.b += sin(static_cast<double>(x+y) / (sceneWidth + sceneHeight));
-      d.f(p);
-    }
-  }*/
+  d.w->render_scene(d.xMin, d.xMax, d.yMin, d.yMax, d.f);
 }
 
 int main(int argc, char* argv[])
 {
-  srand(time(NULL));
-  sf::RenderWindow window(sf::VideoMode(sceneWidth, sceneHeight), "SFML works!", sf::Style::Fullscreen);
+  sf::RenderWindow window(sf::VideoMode(sceneWidth, sceneHeight), "Rays" /*, sf::Style::Fullscreen*/);
   
   sf::Image tracedImage;
   tracedImage.create(sceneWidth, sceneHeight);
@@ -76,12 +57,23 @@ int main(int argc, char* argv[])
 
   vector<Pixel> toUpdate;
   sf::Mutex mutex;
+  
+  spr::World w;
+  w.build(sceneWidth, sceneHeight);
 
   ThreadData d;
-  d.f = [&](Pixel p) {
+  d.f = [&](int x, int y, spr::Vec3 color) {
+    Pixel p;
+    p.x = x;
+    // The ray tracer has y=0 on the bottom, but sf::Image has y=0 on the top, so we reverse it here
+    p.y = sceneHeight - 1 - y;
+    p.r = color.x;
+    p.g = color.y;
+    p.b = color.z;
     sf::Lock lock(mutex);
     toUpdate.push_back(p);
   };
+  d.w = &w;
 
   vector<shared_ptr<sf::Thread>> threads;
   const int xDiv = 1;

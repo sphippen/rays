@@ -61,6 +61,11 @@ namespace spr
     return v;
   }
 
+  Vec3 Vec3::pow(double c) const
+  {
+    return Vec3(::pow(x, c), ::pow(y, c), ::pow(z, c));
+  }
+
   double Vec3::dot(Vec3 a) const
   {
     return x*a.x + y*a.y + z*a.z;
