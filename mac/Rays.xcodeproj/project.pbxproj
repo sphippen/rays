@@ -1,0 +1,347 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		28741EC21853C04C004A3F8A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28741EC11853C04C004A3F8A /* main.cpp */; };
+		28741EDB1853C05E004A3F8A /* constants.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28741EC31853C05E004A3F8A /* constants.cpp */; };
+		28741EDC1853C05E004A3F8A /* GeometricObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28741EC51853C05E004A3F8A /* GeometricObject.cpp */; };
+		28741EDD1853C05E004A3F8A /* MultipleObjects.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28741EC71853C05E004A3F8A /* MultipleObjects.cpp */; };
+		28741EDE1853C05E004A3F8A /* Plane.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28741EC91853C05E004A3F8A /* Plane.cpp */; };
+		28741EDF1853C05E004A3F8A /* rand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28741ECB1853C05E004A3F8A /* rand.cpp */; };
+		28741EE01853C05E004A3F8A /* Ray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28741ECD1853C05E004A3F8A /* Ray.cpp */; };
+		28741EE11853C05E004A3F8A /* ShadeRec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28741ECF1853C05E004A3F8A /* ShadeRec.cpp */; };
+		28741EE21853C05E004A3F8A /* Sphere.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28741ED11853C05E004A3F8A /* Sphere.cpp */; };
+		28741EE31853C05E004A3F8A /* Tracer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28741ED31853C05E004A3F8A /* Tracer.cpp */; };
+		28741EE41853C05E004A3F8A /* Vec3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28741ED51853C05E004A3F8A /* Vec3.cpp */; };
+		28741EE51853C05E004A3F8A /* ViewPlane.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28741ED71853C05E004A3F8A /* ViewPlane.cpp */; };
+		28741EE61853C05E004A3F8A /* World.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28741ED91853C05E004A3F8A /* World.cpp */; };
+		28741F151853C30D004A3F8A /* sfml-system.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28741F121853C30D004A3F8A /* sfml-system.framework */; };
+		28741F161853C30D004A3F8A /* sfml-window.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28741F131853C30D004A3F8A /* sfml-window.framework */; };
+		28741F181853C316004A3F8A /* sfml-system.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 28741F121853C30D004A3F8A /* sfml-system.framework */; };
+		28741F191853C316004A3F8A /* sfml-window.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 28741F131853C30D004A3F8A /* sfml-window.framework */; };
+		28741F1C1853C31F004A3F8A /* freetype.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 28741F1A1853C31F004A3F8A /* freetype.framework */; };
+		28741F1D1853C31F004A3F8A /* sndfile.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 28741F1B1853C31F004A3F8A /* sndfile.framework */; };
+		28741F1F1853C334004A3F8A /* sfml-graphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28741F1E1853C334004A3F8A /* sfml-graphics.framework */; };
+		28741F201853C338004A3F8A /* sfml-graphics.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 28741F1E1853C334004A3F8A /* sfml-graphics.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		28741EB51853BFEF004A3F8A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = ../Frameworks;
+			dstSubfolderSpec = 16;
+			files = (
+				28741F201853C338004A3F8A /* sfml-graphics.framework in CopyFiles */,
+				28741F1C1853C31F004A3F8A /* freetype.framework in CopyFiles */,
+				28741F1D1853C31F004A3F8A /* sndfile.framework in CopyFiles */,
+				28741F181853C316004A3F8A /* sfml-system.framework in CopyFiles */,
+				28741F191853C316004A3F8A /* sfml-window.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		28741EB71853BFEF004A3F8A /* rays */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = rays; sourceTree = BUILT_PRODUCTS_DIR; };
+		28741EC11853C04C004A3F8A /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../../src/main.cpp; sourceTree = "<group>"; };
+		28741EC31853C05E004A3F8A /* constants.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = constants.cpp; path = ../../src/constants.cpp; sourceTree = "<group>"; };
+		28741EC41853C05E004A3F8A /* constants.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.h; name = constants.h; path = ../../src/constants.h; sourceTree = "<group>"; tabWidth = 2; };
+		28741EC51853C05E004A3F8A /* GeometricObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GeometricObject.cpp; path = ../../src/GeometricObject.cpp; sourceTree = "<group>"; };
+		28741EC61853C05E004A3F8A /* GeometricObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GeometricObject.h; path = ../../src/GeometricObject.h; sourceTree = "<group>"; };
+		28741EC71853C05E004A3F8A /* MultipleObjects.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MultipleObjects.cpp; path = ../../src/MultipleObjects.cpp; sourceTree = "<group>"; };
+		28741EC81853C05E004A3F8A /* MultipleObjects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MultipleObjects.h; path = ../../src/MultipleObjects.h; sourceTree = "<group>"; };
+		28741EC91853C05E004A3F8A /* Plane.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Plane.cpp; path = ../../src/Plane.cpp; sourceTree = "<group>"; };
+		28741ECA1853C05E004A3F8A /* Plane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Plane.h; path = ../../src/Plane.h; sourceTree = "<group>"; };
+		28741ECB1853C05E004A3F8A /* rand.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = rand.cpp; path = ../../src/rand.cpp; sourceTree = "<group>"; };
+		28741ECC1853C05E004A3F8A /* rand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rand.h; path = ../../src/rand.h; sourceTree = "<group>"; };
+		28741ECD1853C05E004A3F8A /* Ray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Ray.cpp; path = ../../src/Ray.cpp; sourceTree = "<group>"; };
+		28741ECE1853C05E004A3F8A /* Ray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Ray.h; path = ../../src/Ray.h; sourceTree = "<group>"; };
+		28741ECF1853C05E004A3F8A /* ShadeRec.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ShadeRec.cpp; path = ../../src/ShadeRec.cpp; sourceTree = "<group>"; };
+		28741ED01853C05E004A3F8A /* ShadeRec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShadeRec.h; path = ../../src/ShadeRec.h; sourceTree = "<group>"; };
+		28741ED11853C05E004A3F8A /* Sphere.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Sphere.cpp; path = ../../src/Sphere.cpp; sourceTree = "<group>"; };
+		28741ED21853C05E004A3F8A /* Sphere.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sphere.h; path = ../../src/Sphere.h; sourceTree = "<group>"; };
+		28741ED31853C05E004A3F8A /* Tracer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Tracer.cpp; path = ../../src/Tracer.cpp; sourceTree = "<group>"; };
+		28741ED41853C05E004A3F8A /* Tracer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tracer.h; path = ../../src/Tracer.h; sourceTree = "<group>"; };
+		28741ED51853C05E004A3F8A /* Vec3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Vec3.cpp; path = ../../src/Vec3.cpp; sourceTree = "<group>"; };
+		28741ED61853C05E004A3F8A /* Vec3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Vec3.h; path = ../../src/Vec3.h; sourceTree = "<group>"; };
+		28741ED71853C05E004A3F8A /* ViewPlane.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ViewPlane.cpp; path = ../../src/ViewPlane.cpp; sourceTree = "<group>"; };
+		28741ED81853C05E004A3F8A /* ViewPlane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewPlane.h; path = ../../src/ViewPlane.h; sourceTree = "<group>"; };
+		28741ED91853C05E004A3F8A /* World.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = World.cpp; path = ../../src/World.cpp; sourceTree = "<group>"; };
+		28741EDA1853C05E004A3F8A /* World.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = World.h; path = ../../src/World.h; sourceTree = "<group>"; };
+		28741F121853C30D004A3F8A /* sfml-system.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-system.framework"; path = "SFML-2.1/Frameworks/sfml-system.framework"; sourceTree = "<group>"; };
+		28741F131853C30D004A3F8A /* sfml-window.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-window.framework"; path = "SFML-2.1/Frameworks/sfml-window.framework"; sourceTree = "<group>"; };
+		28741F1A1853C31F004A3F8A /* freetype.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = freetype.framework; path = "SFML-2.1/extlibs/freetype.framework"; sourceTree = "<group>"; };
+		28741F1B1853C31F004A3F8A /* sndfile.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = sndfile.framework; path = "SFML-2.1/extlibs/sndfile.framework"; sourceTree = "<group>"; };
+		28741F1E1853C334004A3F8A /* sfml-graphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-graphics.framework"; path = "SFML-2.1/Frameworks/sfml-graphics.framework"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		28741EB41853BFEF004A3F8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28741F1F1853C334004A3F8A /* sfml-graphics.framework in Frameworks */,
+				28741F151853C30D004A3F8A /* sfml-system.framework in Frameworks */,
+				28741F161853C30D004A3F8A /* sfml-window.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		28741EB81853BFEF004A3F8A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				28741EB71853BFEF004A3F8A /* rays */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		28741EB91853BFEF004A3F8A /* rays */ = {
+			isa = PBXGroup;
+			children = (
+				28741EC31853C05E004A3F8A /* constants.cpp */,
+				28741EC41853C05E004A3F8A /* constants.h */,
+				28741EC51853C05E004A3F8A /* GeometricObject.cpp */,
+				28741EC61853C05E004A3F8A /* GeometricObject.h */,
+				28741EC11853C04C004A3F8A /* main.cpp */,
+				28741EC71853C05E004A3F8A /* MultipleObjects.cpp */,
+				28741EC81853C05E004A3F8A /* MultipleObjects.h */,
+				28741EC91853C05E004A3F8A /* Plane.cpp */,
+				28741ECA1853C05E004A3F8A /* Plane.h */,
+				28741ECB1853C05E004A3F8A /* rand.cpp */,
+				28741ECC1853C05E004A3F8A /* rand.h */,
+				28741ECD1853C05E004A3F8A /* Ray.cpp */,
+				28741ECE1853C05E004A3F8A /* Ray.h */,
+				28741ECF1853C05E004A3F8A /* ShadeRec.cpp */,
+				28741ED01853C05E004A3F8A /* ShadeRec.h */,
+				28741ED11853C05E004A3F8A /* Sphere.cpp */,
+				28741ED21853C05E004A3F8A /* Sphere.h */,
+				28741ED31853C05E004A3F8A /* Tracer.cpp */,
+				28741ED41853C05E004A3F8A /* Tracer.h */,
+				28741ED51853C05E004A3F8A /* Vec3.cpp */,
+				28741ED61853C05E004A3F8A /* Vec3.h */,
+				28741ED71853C05E004A3F8A /* ViewPlane.cpp */,
+				28741ED81853C05E004A3F8A /* ViewPlane.h */,
+				28741ED91853C05E004A3F8A /* World.cpp */,
+				28741EDA1853C05E004A3F8A /* World.h */,
+			);
+			path = rays;
+			sourceTree = "<group>";
+		};
+		28CBCE791853BFC4004AE616 = {
+			isa = PBXGroup;
+			children = (
+				28741F1E1853C334004A3F8A /* sfml-graphics.framework */,
+				28741F1A1853C31F004A3F8A /* freetype.framework */,
+				28741F1B1853C31F004A3F8A /* sndfile.framework */,
+				28741F121853C30D004A3F8A /* sfml-system.framework */,
+				28741F131853C30D004A3F8A /* sfml-window.framework */,
+				28741EB91853BFEF004A3F8A /* rays */,
+				28741EB81853BFEF004A3F8A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		28741EB61853BFEF004A3F8A /* rays */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28741EC01853BFEF004A3F8A /* Build configuration list for PBXNativeTarget "rays" */;
+			buildPhases = (
+				28741EB31853BFEF004A3F8A /* Sources */,
+				28741EB41853BFEF004A3F8A /* Frameworks */,
+				28741EB51853BFEF004A3F8A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = rays;
+			productName = rays;
+			productReference = 28741EB71853BFEF004A3F8A /* rays */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		28CBCE7A1853BFC4004AE616 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+			};
+			buildConfigurationList = 28CBCE7D1853BFC4004AE616 /* Build configuration list for PBXProject "Rays" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 28CBCE791853BFC4004AE616;
+			productRefGroup = 28741EB81853BFEF004A3F8A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				28741EB61853BFEF004A3F8A /* rays */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		28741EB31853BFEF004A3F8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28741EE41853C05E004A3F8A /* Vec3.cpp in Sources */,
+				28741EE31853C05E004A3F8A /* Tracer.cpp in Sources */,
+				28741EDC1853C05E004A3F8A /* GeometricObject.cpp in Sources */,
+				28741EE61853C05E004A3F8A /* World.cpp in Sources */,
+				28741EE21853C05E004A3F8A /* Sphere.cpp in Sources */,
+				28741EC21853C04C004A3F8A /* main.cpp in Sources */,
+				28741EDF1853C05E004A3F8A /* rand.cpp in Sources */,
+				28741EDE1853C05E004A3F8A /* Plane.cpp in Sources */,
+				28741EE11853C05E004A3F8A /* ShadeRec.cpp in Sources */,
+				28741EE01853C05E004A3F8A /* Ray.cpp in Sources */,
+				28741EE51853C05E004A3F8A /* ViewPlane.cpp in Sources */,
+				28741EDD1853C05E004A3F8A /* MultipleObjects.cpp in Sources */,
+				28741EDB1853C05E004A3F8A /* constants.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		28741EBE1853BFEF004A3F8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/andysoto/Projects/Programming/rays/mac/SFML-2.1/Frameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"${PROJECT_DIR}/SFML-2.1/include",
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		28741EBF1853BFEF004A3F8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/andysoto/Projects/Programming/rays/mac/SFML-2.1/Frameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"${PROJECT_DIR}/SFML-2.1/include",
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+		28CBCE7E1853BFC4004AE616 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		28CBCE7F1853BFC4004AE616 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		28741EC01853BFEF004A3F8A /* Build configuration list for PBXNativeTarget "rays" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28741EBE1853BFEF004A3F8A /* Debug */,
+				28741EBF1853BFEF004A3F8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		28CBCE7D1853BFC4004AE616 /* Build configuration list for PBXProject "Rays" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28CBCE7E1853BFC4004AE616 /* Debug */,
+				28CBCE7F1853BFC4004AE616 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 28CBCE7A1853BFC4004AE616 /* Project object */;
+}

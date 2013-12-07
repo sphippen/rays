@@ -1,7 +1,16 @@
-Debug
-ipch
-Release
+# Visual Studio
+Debug/
+ipch/
+Release/
 *.sdf
 *.suo
 *.user
 *.opensdf
+
+# Xcode
+build/
+xcuserdata
+*.xccheckout
+
+# Mac
+.DS_Store
