@@ -10,6 +10,35 @@
       <Platform>Win32</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\constants.cpp" />
+    <ClCompile Include="..\src\GeometricObject.cpp" />
+    <ClCompile Include="..\src\main.cpp" />
+    <ClCompile Include="..\src\MultipleObjects.cpp" />
+    <ClCompile Include="..\src\Plane.cpp" />
+    <ClCompile Include="..\src\rand.cpp" />
+    <ClCompile Include="..\src\Ray.cpp" />
+    <ClCompile Include="..\src\ShadeRec.cpp" />
+    <ClCompile Include="..\src\Sphere.cpp" />
+    <ClCompile Include="..\src\Tracer.cpp" />
+    <ClCompile Include="..\src\Vec3.cpp" />
+    <ClCompile Include="..\src\ViewPlane.cpp" />
+    <ClCompile Include="..\src\World.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\constants.h" />
+    <ClInclude Include="..\src\GeometricObject.h" />
+    <ClInclude Include="..\src\MultipleObjects.h" />
+    <ClInclude Include="..\src\Plane.h" />
+    <ClInclude Include="..\src\rand.h" />
+    <ClInclude Include="..\src\Ray.h" />
+    <ClInclude Include="..\src\ShadeRec.h" />
+    <ClInclude Include="..\src\Sphere.h" />
+    <ClInclude Include="..\src\Tracer.h" />
+    <ClInclude Include="..\src\Vec3.h" />
+    <ClInclude Include="..\src\ViewPlane.h" />
+    <ClInclude Include="..\src\World.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{94D62678-D41B-458D-967F-2DC306C3FDD7}</ProjectGuid>
     <RootNamespace>Rays</RootNamespace>
@@ -41,14 +70,17 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>SFML-2.1\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\SFML-2.1\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>SFML-2.1\lib</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\SFML-2.1\win\lib</AdditionalLibraryDirectories>
       <AdditionalDependencies>sfml-main-d.lib;sfml-graphics-d.lib;sfml-window-d.lib;sfml-system-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SubSystem>Console</SubSystem>
     </Link>
+    <PostBuildEvent>
+      <Command>copy $(ProjectDir)\..\SFML-2.1\win\bin\*.dll $(OutputPath)</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -56,46 +88,20 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <AdditionalIncludeDirectories>SFML-2.1\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\SFML-2.1\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalLibraryDirectories>SFML-2.1\lib</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\SFML-2.1\win\lib</AdditionalLibraryDirectories>
       <AdditionalDependencies>sfml-main.lib;sfml-graphics.lib;sfml-window.lib;sfml-system.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SubSystem>Console</SubSystem>
     </Link>
+    <PostBuildEvent>
+      <Command>copy $(ProjectDir)\..\SFML-2.1\win\bin\*.dll $(OutputPath)</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="constants.cpp" />
-    <ClCompile Include="GeometricObject.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="MultipleObjects.cpp" />
-    <ClCompile Include="Plane.cpp" />
-    <ClCompile Include="rand.cpp" />
-    <ClCompile Include="Ray.cpp" />
-    <ClCompile Include="ShadeRec.cpp" />
-    <ClCompile Include="Sphere.cpp" />
-    <ClCompile Include="Tracer.cpp" />
-    <ClCompile Include="Vec3.cpp" />
-    <ClCompile Include="ViewPlane.cpp" />
-    <ClCompile Include="World.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="constants.h" />
-    <ClInclude Include="GeometricObject.h" />
-    <ClInclude Include="MultipleObjects.h" />
-    <ClInclude Include="Plane.h" />
-    <ClInclude Include="rand.h" />
-    <ClInclude Include="Ray.h" />
-    <ClInclude Include="ShadeRec.h" />
-    <ClInclude Include="Sphere.h" />
-    <ClInclude Include="Tracer.h" />
-    <ClInclude Include="Vec3.h" />
-    <ClInclude Include="ViewPlane.h" />
-    <ClInclude Include="World.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
