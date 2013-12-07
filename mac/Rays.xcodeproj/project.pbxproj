@@ -49,36 +49,36 @@
 
 /* Begin PBXFileReference section */
 		28741EB71853BFEF004A3F8A /* rays */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = rays; sourceTree = BUILT_PRODUCTS_DIR; };
-		28741EC11853C04C004A3F8A /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../../src/main.cpp; sourceTree = "<group>"; };
-		28741EC31853C05E004A3F8A /* constants.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = constants.cpp; path = ../../src/constants.cpp; sourceTree = "<group>"; };
-		28741EC41853C05E004A3F8A /* constants.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.h; name = constants.h; path = ../../src/constants.h; sourceTree = "<group>"; tabWidth = 2; };
-		28741EC51853C05E004A3F8A /* GeometricObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GeometricObject.cpp; path = ../../src/GeometricObject.cpp; sourceTree = "<group>"; };
-		28741EC61853C05E004A3F8A /* GeometricObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GeometricObject.h; path = ../../src/GeometricObject.h; sourceTree = "<group>"; };
-		28741EC71853C05E004A3F8A /* MultipleObjects.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MultipleObjects.cpp; path = ../../src/MultipleObjects.cpp; sourceTree = "<group>"; };
-		28741EC81853C05E004A3F8A /* MultipleObjects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MultipleObjects.h; path = ../../src/MultipleObjects.h; sourceTree = "<group>"; };
-		28741EC91853C05E004A3F8A /* Plane.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Plane.cpp; path = ../../src/Plane.cpp; sourceTree = "<group>"; };
-		28741ECA1853C05E004A3F8A /* Plane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Plane.h; path = ../../src/Plane.h; sourceTree = "<group>"; };
-		28741ECB1853C05E004A3F8A /* rand.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = rand.cpp; path = ../../src/rand.cpp; sourceTree = "<group>"; };
-		28741ECC1853C05E004A3F8A /* rand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rand.h; path = ../../src/rand.h; sourceTree = "<group>"; };
-		28741ECD1853C05E004A3F8A /* Ray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Ray.cpp; path = ../../src/Ray.cpp; sourceTree = "<group>"; };
-		28741ECE1853C05E004A3F8A /* Ray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Ray.h; path = ../../src/Ray.h; sourceTree = "<group>"; };
-		28741ECF1853C05E004A3F8A /* ShadeRec.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ShadeRec.cpp; path = ../../src/ShadeRec.cpp; sourceTree = "<group>"; };
-		28741ED01853C05E004A3F8A /* ShadeRec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShadeRec.h; path = ../../src/ShadeRec.h; sourceTree = "<group>"; };
-		28741ED11853C05E004A3F8A /* Sphere.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Sphere.cpp; path = ../../src/Sphere.cpp; sourceTree = "<group>"; };
-		28741ED21853C05E004A3F8A /* Sphere.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sphere.h; path = ../../src/Sphere.h; sourceTree = "<group>"; };
-		28741ED31853C05E004A3F8A /* Tracer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Tracer.cpp; path = ../../src/Tracer.cpp; sourceTree = "<group>"; };
-		28741ED41853C05E004A3F8A /* Tracer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tracer.h; path = ../../src/Tracer.h; sourceTree = "<group>"; };
-		28741ED51853C05E004A3F8A /* Vec3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Vec3.cpp; path = ../../src/Vec3.cpp; sourceTree = "<group>"; };
-		28741ED61853C05E004A3F8A /* Vec3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Vec3.h; path = ../../src/Vec3.h; sourceTree = "<group>"; };
-		28741ED71853C05E004A3F8A /* ViewPlane.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ViewPlane.cpp; path = ../../src/ViewPlane.cpp; sourceTree = "<group>"; };
-		28741ED81853C05E004A3F8A /* ViewPlane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewPlane.h; path = ../../src/ViewPlane.h; sourceTree = "<group>"; };
-		28741ED91853C05E004A3F8A /* World.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = World.cpp; path = ../../src/World.cpp; sourceTree = "<group>"; };
-		28741EDA1853C05E004A3F8A /* World.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = World.h; path = ../../src/World.h; sourceTree = "<group>"; };
-		28741F121853C30D004A3F8A /* sfml-system.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-system.framework"; path = "SFML-2.1/Frameworks/sfml-system.framework"; sourceTree = "<group>"; };
-		28741F131853C30D004A3F8A /* sfml-window.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-window.framework"; path = "SFML-2.1/Frameworks/sfml-window.framework"; sourceTree = "<group>"; };
-		28741F1A1853C31F004A3F8A /* freetype.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = freetype.framework; path = "SFML-2.1/extlibs/freetype.framework"; sourceTree = "<group>"; };
-		28741F1B1853C31F004A3F8A /* sndfile.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = sndfile.framework; path = "SFML-2.1/extlibs/sndfile.framework"; sourceTree = "<group>"; };
-		28741F1E1853C334004A3F8A /* sfml-graphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-graphics.framework"; path = "SFML-2.1/Frameworks/sfml-graphics.framework"; sourceTree = "<group>"; };
+		28741EC11853C04C004A3F8A /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../src/main.cpp; sourceTree = SOURCE_ROOT; };
+		28741EC31853C05E004A3F8A /* constants.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = constants.cpp; path = ../src/constants.cpp; sourceTree = SOURCE_ROOT; };
+		28741EC41853C05E004A3F8A /* constants.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.h; name = constants.h; path = ../src/constants.h; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		28741EC51853C05E004A3F8A /* GeometricObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GeometricObject.cpp; path = ../src/GeometricObject.cpp; sourceTree = SOURCE_ROOT; };
+		28741EC61853C05E004A3F8A /* GeometricObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GeometricObject.h; path = ../src/GeometricObject.h; sourceTree = SOURCE_ROOT; };
+		28741EC71853C05E004A3F8A /* MultipleObjects.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MultipleObjects.cpp; path = ../src/MultipleObjects.cpp; sourceTree = SOURCE_ROOT; };
+		28741EC81853C05E004A3F8A /* MultipleObjects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MultipleObjects.h; path = ../src/MultipleObjects.h; sourceTree = SOURCE_ROOT; };
+		28741EC91853C05E004A3F8A /* Plane.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Plane.cpp; path = ../src/Plane.cpp; sourceTree = SOURCE_ROOT; };
+		28741ECA1853C05E004A3F8A /* Plane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Plane.h; path = ../src/Plane.h; sourceTree = SOURCE_ROOT; };
+		28741ECB1853C05E004A3F8A /* rand.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = rand.cpp; path = ../src/rand.cpp; sourceTree = SOURCE_ROOT; };
+		28741ECC1853C05E004A3F8A /* rand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rand.h; path = ../src/rand.h; sourceTree = SOURCE_ROOT; };
+		28741ECD1853C05E004A3F8A /* Ray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Ray.cpp; path = ../src/Ray.cpp; sourceTree = SOURCE_ROOT; };
+		28741ECE1853C05E004A3F8A /* Ray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Ray.h; path = ../src/Ray.h; sourceTree = SOURCE_ROOT; };
+		28741ECF1853C05E004A3F8A /* ShadeRec.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ShadeRec.cpp; path = ../src/ShadeRec.cpp; sourceTree = SOURCE_ROOT; };
+		28741ED01853C05E004A3F8A /* ShadeRec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShadeRec.h; path = ../src/ShadeRec.h; sourceTree = SOURCE_ROOT; };
+		28741ED11853C05E004A3F8A /* Sphere.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Sphere.cpp; path = ../src/Sphere.cpp; sourceTree = SOURCE_ROOT; };
+		28741ED21853C05E004A3F8A /* Sphere.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sphere.h; path = ../src/Sphere.h; sourceTree = SOURCE_ROOT; };
+		28741ED31853C05E004A3F8A /* Tracer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Tracer.cpp; path = ../src/Tracer.cpp; sourceTree = SOURCE_ROOT; };
+		28741ED41853C05E004A3F8A /* Tracer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tracer.h; path = ../src/Tracer.h; sourceTree = SOURCE_ROOT; };
+		28741ED51853C05E004A3F8A /* Vec3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Vec3.cpp; path = ../src/Vec3.cpp; sourceTree = SOURCE_ROOT; };
+		28741ED61853C05E004A3F8A /* Vec3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Vec3.h; path = ../src/Vec3.h; sourceTree = SOURCE_ROOT; };
+		28741ED71853C05E004A3F8A /* ViewPlane.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ViewPlane.cpp; path = ../src/ViewPlane.cpp; sourceTree = SOURCE_ROOT; };
+		28741ED81853C05E004A3F8A /* ViewPlane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewPlane.h; path = ../src/ViewPlane.h; sourceTree = SOURCE_ROOT; };
+		28741ED91853C05E004A3F8A /* World.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = World.cpp; path = ../src/World.cpp; sourceTree = SOURCE_ROOT; };
+		28741EDA1853C05E004A3F8A /* World.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = World.h; path = ../src/World.h; sourceTree = SOURCE_ROOT; };
+		28741F121853C30D004A3F8A /* sfml-system.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-system.framework"; path = "../SFML-2.1/mac/Frameworks/sfml-system.framework"; sourceTree = SOURCE_ROOT; };
+		28741F131853C30D004A3F8A /* sfml-window.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-window.framework"; path = "../SFML-2.1/mac/Frameworks/sfml-window.framework"; sourceTree = SOURCE_ROOT; };
+		28741F1A1853C31F004A3F8A /* freetype.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = freetype.framework; path = "../SFML-2.1/mac/extlibs/freetype.framework"; sourceTree = SOURCE_ROOT; };
+		28741F1B1853C31F004A3F8A /* sndfile.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = sndfile.framework; path = "../SFML-2.1/mac/extlibs/sndfile.framework"; sourceTree = SOURCE_ROOT; };
+		28741F1E1853C334004A3F8A /* sfml-graphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-graphics.framework"; path = "../SFML-2.1/mac/Frameworks/sfml-graphics.framework"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,9 +101,30 @@
 				28741EB71853BFEF004A3F8A /* rays */,
 			);
 			name = Products;
+			sourceTree = SOURCE_ROOT;
+		};
+		28CBCE791853BFC4004AE616 = {
+			isa = PBXGroup;
+			children = (
+				28D8FF491853CBF200B2FD65 /* Source */,
+				28D8FF481853CBE300B2FD65 /* Frameworks */,
+				28741EB81853BFEF004A3F8A /* Products */,
+			);
 			sourceTree = "<group>";
 		};
-		28741EB91853BFEF004A3F8A /* rays */ = {
+		28D8FF481853CBE300B2FD65 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				28741F1A1853C31F004A3F8A /* freetype.framework */,
+				28741F1B1853C31F004A3F8A /* sndfile.framework */,
+				28741F1E1853C334004A3F8A /* sfml-graphics.framework */,
+				28741F121853C30D004A3F8A /* sfml-system.framework */,
+				28741F131853C30D004A3F8A /* sfml-window.framework */,
+			);
+			name = Frameworks;
+			sourceTree = SOURCE_ROOT;
+		};
+		28D8FF491853CBF200B2FD65 /* Source */ = {
 			isa = PBXGroup;
 			children = (
 				28741EC31853C05E004A3F8A /* constants.cpp */,
@@ -132,21 +153,8 @@
 				28741ED91853C05E004A3F8A /* World.cpp */,
 				28741EDA1853C05E004A3F8A /* World.h */,
 			);
-			path = rays;
-			sourceTree = "<group>";
-		};
-		28CBCE791853BFC4004AE616 = {
-			isa = PBXGroup;
-			children = (
-				28741F1E1853C334004A3F8A /* sfml-graphics.framework */,
-				28741F1A1853C31F004A3F8A /* freetype.framework */,
-				28741F1B1853C31F004A3F8A /* sndfile.framework */,
-				28741F121853C30D004A3F8A /* sfml-system.framework */,
-				28741F131853C30D004A3F8A /* sfml-window.framework */,
-				28741EB91853BFEF004A3F8A /* rays */,
-				28741EB81853BFEF004A3F8A /* Products */,
-			);
-			sourceTree = "<group>";
+			name = Source;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -235,7 +243,7 @@
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/andysoto/Projects/Programming/rays/mac/SFML-2.1/Frameworks",
+					"${PROJECT_DIR}/../SFML-2.1/mac/Frameworks",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -255,13 +263,13 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"${PROJECT_DIR}/SFML-2.1/include",
+					"${PROJECT_DIR}/../SFML-2.1/include",
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
+				SDKROOT = macosx10.8;
 				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
@@ -286,7 +294,7 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/andysoto/Projects/Programming/rays/mac/SFML-2.1/Frameworks",
+					"${PROJECT_DIR}/../SFML-2.1/mac/Frameworks",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -299,12 +307,12 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"${PROJECT_DIR}/SFML-2.1/include",
+					"${PROJECT_DIR}/../SFML-2.1/include",
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
+				SDKROOT = macosx10.8;
 				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Release;
@@ -312,12 +320,14 @@
 		28CBCE7E1853BFC4004AE616 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				SDKROOT = macosx10.8;
 			};
 			name = Debug;
 		};
 		28CBCE7F1853BFC4004AE616 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				SDKROOT = macosx10.8;
 			};
 			name = Release;
 		};
@@ -331,6 +341,7 @@
 				28741EBF1853BFEF004A3F8A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		28CBCE7D1853BFC4004AE616 /* Build configuration list for PBXProject "Rays" */ = {
 			isa = XCConfigurationList;
