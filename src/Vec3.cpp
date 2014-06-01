@@ -88,6 +88,7 @@ namespace spr
   Vec3 Vec3::green() { return Vec3(0.0, 1.0, 0.0); }
   Vec3 Vec3::blue() { return Vec3(0.0, 0.0, 1.0); }
   Vec3 Vec3::yellow() { return Vec3(1.0, 1.0, 0.0); }
+  Vec3 Vec3::orange() { return Vec3(255./255., 128./255., 0.0); }
 }
 
 spr::Vec3 operator+(spr::Vec3 a, spr::Vec3 b)

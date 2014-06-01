@@ -10,6 +10,7 @@ namespace spr
   class GeometricObject
   {
    public:
+    virtual ~GeometricObject() {}
     virtual bool hit (Ray r, double& tmin, ShadeRec& sr) const = 0;
     Vec3 color() const;
     void setColor(Vec3 color);

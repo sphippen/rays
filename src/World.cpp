@@ -9,6 +9,9 @@
 #include "Sphere.h"
 #include "Plane.h"
 
+using std::unique_ptr;
+using std::make_shared;
+
 namespace spr
 {
   World::World() {} 
@@ -20,21 +23,25 @@ namespace spr
     vp.setGamma(1.0);
 
     bgColor = Vec3::black();
-    tracer = std::unique_ptr<Tracer>(new MultipleObjects(*this));
+    tracer = unique_ptr<Tracer>(new MultipleObjects(*this));
 
-    auto sph = std::make_shared<Sphere>();
-    sph->setCenter(Vec3(0, -25, 0));
-    sph->setRadius(80);
-    sph->setColor(Vec3::red());
-    addObject(sph);
-
-    sph = std::make_shared<Sphere>(Vec3(0, 30, 0), 60);
+    auto sph = make_shared<Sphere>();
+    sph->setCenter(Vec3(0, 0, 0));
+    sph->setRadius(40);
     sph->setColor(Vec3::yellow());
     addObject(sph);
 
-    auto plane = std::make_shared<Plane>(Vec3(0, 0, 0), Vec3(0, 1, 1));
-    plane->setColor(Vec3(0.0, 0.3, 0.0));
-    addObject(plane);
+    sph = make_shared<Sphere>();
+    sph->setCenter(Vec3(-29, 29, -20));
+    sph->setRadius(27);
+    sph->setColor(Vec3::orange());
+    addObject(sph);
+
+    sph = make_shared<Sphere>();
+    sph->setCenter(Vec3(20, -40, -30));
+    sph->setRadius(34);
+    sph->setColor(Vec3::green());
+    addObject(sph);
   }
 
   void World::addObject(std::shared_ptr<GeometricObject> obj)

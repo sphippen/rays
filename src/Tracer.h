@@ -10,6 +10,7 @@ namespace spr
   {
    public:
     Tracer(World& world);
+    virtual ~Tracer() {}
 
     virtual Vec3 traceRay(Ray r) const;
    protected:

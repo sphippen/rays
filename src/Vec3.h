@@ -40,6 +40,7 @@ namespace spr
     static Vec3 green();
     static Vec3 blue();
     static Vec3 yellow();
+    static Vec3 orange();
   };
 }
 

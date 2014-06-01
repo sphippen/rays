@@ -14,8 +14,8 @@ using std::vector;
 using std::shared_ptr;
 using std::make_shared;
 
-const int sceneHeight = 200;
-const int sceneWidth = 200;
+const int sceneHeight = 400;
+const int sceneWidth = 400;
 
 struct Pixel
 {
